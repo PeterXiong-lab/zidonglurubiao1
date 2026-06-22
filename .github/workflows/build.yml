@@ -24,11 +24,11 @@ jobs:
           python -m PyInstaller ^
             --onefile ^
             --console ^
-            --name 地址处理工具 ^
+            --name dizhi ^
             main.py
 
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          name: 地址处理工具
+          name: dizhi
           path: dist/*.exe
